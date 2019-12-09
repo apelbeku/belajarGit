@@ -93,7 +93,7 @@
 
 <!-- jQuery 3 -->
   <?php 
-    include 'template/java.php';
+    include 'template/script.php';
   ?>
 </script>
 </body>

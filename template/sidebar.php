@@ -26,7 +26,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">Menu Utama</li>
         <li class="active">
-          <a href="#">
+          <a href="../">
             <i class="fa fa-home"></i> <span>Beranda</span>
 
         <li class="treeview">
@@ -37,14 +37,14 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-circle-o"></i> Tambah Post</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i> Beranda Post</a></li>
+            <li><a href="#"><i class="fa fa-plus"></i> Tambah Post</a></li>
+            <li><a href="#"><i class="fa fa-navicon"></i> Beranda Post</a></li>
           </ul>
         </li>
 
         <li class="header">Pengaturan</li>
         <li class="treeview">
-          <a href="#">
+          <a href="../user">
             <i class="fa fa-user"></i> <span>User</span>
           </a>
         </li>
