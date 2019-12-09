@@ -2,7 +2,7 @@
 <html>
 <head>
   <?php 
-    include 'template/link.php';
+    include 'layout/link.php';
   ?>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -11,7 +11,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="template/adminlte2/index2.html" class="logo">
+    <a href="layout/adminlte2/index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
@@ -19,7 +19,7 @@
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <?php 
-      include 'template/navbar.php';
+      include 'layout/navbar.php';
     ?>
   </header>
 
@@ -27,7 +27,7 @@
 
   <!-- Left side column. contains the sidebar -->
   <?php 
-    include 'template/sidebar.php';
+    include 'layout/sidebar.php';
   ?>
 
   <!-- =============================================== -->
@@ -78,7 +78,7 @@
   <!-- /.content-wrapper -->
 
   <?php 
-    include 'template/footer.php';
+    include 'layout/footer.php';
   ?>
 
   <!-- Control Sidebar -->
@@ -93,7 +93,7 @@
 
 <!-- jQuery 3 -->
   <?php 
-    include 'template/script.php';
+    include 'layout/script.php';
   ?>
 </script>
 </body>

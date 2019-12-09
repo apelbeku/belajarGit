@@ -28,6 +28,8 @@
         <li class="active">
           <a href="../">
             <i class="fa fa-home"></i> <span>Beranda</span>
+          </a>
+        </li>
 
         <li class="treeview">
           <a href="#">
@@ -42,12 +44,12 @@
           </ul>
         </li>
 
-        <li class="header">Pengaturan</li>
-        <li class="treeview">
-          <a href="../user">
+       <li class="header">Pengaturan</li>
+        <li>
+          <a href="./user">
             <i class="fa fa-user"></i> <span>User</span>
           </a>
-        </li>
+      </li>
 
 
       </ul>

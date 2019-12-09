@@ -42,7 +42,7 @@
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <?php 
-      include '../template/navbar.php';
+      include '../layout/navbar.php';
     ?>
   </header>
 
@@ -50,7 +50,7 @@
 
   <!-- Left side column. contains the sidebar -->
   <?php 
-    include '../template/sidebar.php';
+    include '../layout/sidebar.php';
   ?>
 
   <!-- =============================================== -->
@@ -146,7 +146,7 @@
   <!-- /.content-wrapper -->
 
   <?php 
-    include '../template/footer.php';
+    include '../layout/footer.php';
   ?>
 
   <!-- Control Sidebar -->
