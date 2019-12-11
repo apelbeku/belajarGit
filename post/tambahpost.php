@@ -60,7 +60,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Tambahpost
+        Tambah post
         <small>Bikin Project CMS</small>
       </h1>
       <ol class="breadcrumb">
