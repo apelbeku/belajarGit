@@ -26,7 +26,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">Menu Utama</li>
         <li class="active">
-          <a href="../">
+          <a href="http://localhost/php/belajarGit">
             <i class="fa fa-home"></i> <span>Beranda</span>
           </a>
         </li>
@@ -39,14 +39,14 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="./post/tambahpost.php"><i class="fa fa-plus"></i> Tambah Post</a></li>
-            <li><a href="./post/berandapost.php"><i class="fa fa-navicon"></i> Beranda Post</a></li>
+            <li><a href="http://localhost/php/belajarGit/post/tambahpost.php"><i class="fa fa-plus"></i> Tambah Post</a></li>
+            <li><a href="http://localhost/php/belajarGit/post/berandapost.php"><i class="fa fa-navicon"></i> Beranda Post</a></li>
           </ul>
         </li>
 
        <li class="header">Pengaturan</li>
         <li>
-          <a href="./user">
+          <a href="http://localhost/php/belajarGit/user/">
             <i class="fa fa-user"></i> <span>User</span>
           </a>
       </li>
