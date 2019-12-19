@@ -37,13 +37,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Tambah User
-        <small>Membuat Akun User</small>
+        Tambah post
+        <small>Bikin Project CMS</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="../index.php"><i class="fa fa-home"></i>Beranda</a></li>
-        <li><a href="index.php"><i class="fa fa-user"></i>User</a></li>
-        <li class="active"><i class="fa fa-plus"></i>Tambah User</li>
+        <li class="active"><i class="fa fa-user"></i>User</li>
       </ol>
     </section>
 
@@ -53,45 +51,48 @@
       <!-- Default box -->
         <div class="box">
             <div class="box-header with-border">
-              <h3 class="box-title">Akun Login User</h3>
+              <h3 class="box-title">Add Post</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-                <form role="form" method="POST" action="proses_create.php">
-              <div class="box-body">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Masukkan Nama">
-                </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" class="form-control" id="email" placeholder="Masukkan email">
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" name="password" class="form-control" id="password" placeholder="Password">
-                </div>
-                <!-- <div class="form-group">
-                  <label for="exampleInputFile">File input</label>
-                  <input type="file" id="exampleInputFile">
+              <form role="form" method="POST" action="proses_create.php">
+                <div class="box-body">
+                  <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" name="author" class="form-control" id="author" placeholder="Nama Author">
+                 </div>
+                  <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" name="title" class="form-control" id="title" placeholder="Nama Title">
+                  </div>
+                  <div class="form-group">
+                    <label for="content">Content</label>
+                    <textarea name="content" class="form-control" id="content" placeholder="Content"></textarea>
+                  </div>
+                 <div class="form-group">
+                   <label for="status">Status</label><br>
+                    <label><input type="radio" name="status" value="0"><br>Draft</label>
+                    <label><input type="radio" name="status" value="1"><br>Publish</label>
+                  </div>
+                  <!-- <div class="form-group">
+                    <label for="exampleInputFile">File input</label>
+                    <input type="file" id="exampleInputFile">
 
-                  <p class="help-block">Example block-level help text here.</p>
-                 </div> 
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Check me out
-                  </label>
-                 </div> -->
-              </div>
+                    <p class="help-block">Example block-level help text here.</p>
+                   </div> 
+                  <div class="checkbox">
+                   <label>
+                      <input type="checkbox"> Check me out
+                    </label>
+                   </div> -->
+                </div>
+             </div>
               <!-- /.box-body -->
-
-              <div class="box-footer">
-                <a href="index.php" class="btn btn-sm btn-default"><i class="fa fa-arrow-left"></i>Kembali</a>
+              <div class="box-footer clearfix">
+                <a href="berandapost.php" class="btn btn-sm btn-default"><i class="fa fa-arrow-left"></i>Kembali</a>
                 <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-send"></i>Submit</button>
               </div>
             </form>
-            </div>
-            <!-- /.box-body -->
           </div>  
       <!-- /.box -->
 

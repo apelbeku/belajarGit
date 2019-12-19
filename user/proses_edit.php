@@ -8,6 +8,21 @@
 
 
 
+	$data		= "SELECT * FROM users WHERE id = '$id'";
+	$result		= mysqli_connect($konek, $sql);
+	$row		= mysqli_fetch_row($result);
+	$pas 		= $row[3];//result =password daro table User
+
+	if(empty($pass)) {
+		$pass 		= $pas;
+	}
+	else{
+		$pass		= $_POST['password'];
+	}
+	
+
+
+
 	$sql		= "UPDATE users SET name='$name', email='$email', password='$pass' WHERE id='$id'";
 
 	mysqli_query($konek, $sql);

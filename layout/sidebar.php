@@ -4,7 +4,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="template/adminlte2/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="http://localhost/php/belajargit/template/adminlte2/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
@@ -39,7 +39,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="http://localhost/php/belajarGit/post/tambahpost.php"><i class="fa fa-plus"></i> Tambah Post</a></li>
+            <li><a href="http://localhost/php/belajarGit/post/create.php"><i class="fa fa-plus"></i> Tambah Post</a></li>
             <li><a href="http://localhost/php/belajarGit/post/berandapost.php"><i class="fa fa-navicon"></i> Beranda Post</a></li>
           </ul>
         </li>

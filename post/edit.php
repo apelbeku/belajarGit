@@ -37,7 +37,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Edit User
+        Edit Post
         <small>Mengedit Akun User</small>
       </h1>
       <ol class="breadcrumb">
@@ -53,7 +53,7 @@
       <!-- Default box -->
         <div class="box">
             <div class="box-header with-border">
-              <h3 class="box-title">Edit Akun User</h3>
+              <h3 class="box-title">Edit Post</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
@@ -62,7 +62,7 @@
                     include '../koneksi.php';
 
                     $id       = $_GET['id'];
-                    $sql      = "SELECT * FROM users WHERE id='$id'";
+                    $sql      = "SELECT * FROM post WHERE id='$id'";
                     $result   = mysqli_query($konek, $sql);
 
                     $row      = mysqli_fetch_assoc($result);
@@ -70,16 +70,21 @@
                   <input type="hidden" name="id" value="<?php echo $row['id'];?>">
               <div class="box-body">
                 <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" value="<?php echo $row['name'] ?>" class="form-control" id="name" placeholder="Masukkan Nama">
+                  <label for="author">Author</label>
+                  <input type="text" name="author" value="<?php echo $row['author'] ?>" class="form-control" id="author" placeholder="Nama author">
                 </div>
                 <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" value="<?php echo $row['email'] ?>" class="form-control" id="email" placeholder="Masukkan email">
+                  <label for="title">Title</label>
+                  <input type="text" name="title" value="<?php echo $row['title'] ?>" class="form-control" id="title" placeholder="Nama title">
                 </div>
                 <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" name="password" value="<?php echo $row['password'] ?>" class="form-control" id="password" placeholder="Password">
+                  <label for="content">Content</label>
+                  <textarea name="content" class="form-control" id="content" placeholder="content"><?php echo $row['content'] ?></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="status">Status</label><br>
+                  <label><input type="radio" name="status" <?php echo ($row['status'])?"":"checked" ?> id="status" value="0"><br>Draft</label>
+                  <label><input type="radio" name="status" <?php echo ($row['status'])?"checked":"" ?> id="status" value="1"><br>Publish</label>
                 </div>
                 <!-- <div class="form-group">
                   <label for="exampleInputFile">File input</label>
@@ -96,7 +101,7 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <a href="index.php" class="btn btn-sm btn-default"><i class="fa fa-arrow-left"></i>Kembali</a>
+                <a href="berandapost.php" class="btn btn-sm btn-default"><i class="fa fa-arrow-left"></i>Kembali</a>
                 <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-send"></i>Submit</button>
               </div>
             </form>
