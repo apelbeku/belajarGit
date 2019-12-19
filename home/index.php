@@ -1,8 +1,16 @@
+<?php 
+  session_start();
+  $_SESSION['id'];
+  if (isset($_SESSION['email'])) {
+
+ ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
   <?php 
-    include 'layout/link.php';
+    include '../layout/link.php';
   ?>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -11,7 +19,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="layout/adminlte2/index2.html" class="logo">
+    <a href="../layout/adminlte2/index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>A</b>LT</span>
       <!-- logo for regular state and mobile devices -->
@@ -19,7 +27,7 @@
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <?php 
-      include 'layout/navbar.php';
+      include '../layout/navbar.php';
     ?>
   </header>
 
@@ -27,7 +35,7 @@
 
   <!-- Left side column. contains the sidebar -->
   <?php 
-    include 'layout/sidebar.php';
+    include '../layout/sidebar.php';
   ?>
 
   <!-- =============================================== -->
@@ -78,7 +86,7 @@
   <!-- /.content-wrapper -->
 
   <?php 
-    include 'layout/footer.php';
+    include '../layout/footer.php';
   ?>
 
   <!-- Control Sidebar -->
@@ -93,8 +101,13 @@
 
 <!-- jQuery 3 -->
   <?php 
-    include 'layout/script.php';
+    include '../layout/script.php';
   ?>
 </script>
 </body>
 </html>
+<?php
+  }else{
+    echo "anda belum Login, Silahkan Login dahulu <a href='http://localhost/php/belajarGit/index.php'>DISINI !!!!</a>";
+  }
+ ?>
