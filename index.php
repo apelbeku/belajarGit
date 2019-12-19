@@ -3,98 +3,52 @@
 <head>
   <?php 
     include 'layout/link.php';
-  ?>
+   ?>
+   <title>BelajarGit || CMS Login</title>
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
-<!-- Site wrapper -->
-<div class="wrapper">
+<body class="hold-transition login-page">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="../../index2.html"><b>Admin</b>LTE</a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="login-box-body">
+    <p class="login-box-msg">Sign in to start your session</p>
 
-  <header class="main-header">
-    <!-- Logo -->
-    <a href="layout/adminlte2/index2.html" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
-    </a>
-    <!-- Header Navbar: style can be found in header.less -->
-    <?php 
-      include 'layout/navbar.php';
-    ?>
-  </header>
-
-  <!-- =============================================== -->
-
-  <!-- Left side column. contains the sidebar -->
-  <?php 
-    include 'layout/sidebar.php';
-  ?>
-
-  <!-- =============================================== -->
-
-  <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Belajar Git
-        <small>Bikin Project CMS</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li class="active"><i class="fa fa-home"></i>Beranda</li>
-      </ol>
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
-
-      <!-- Default box -->
-      <div class="box">
-        <div class="box-header with-border">
-          <h3 class="box-title">Title</h3>
-
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip"
-                    title="Collapse">
-              <i class="fa fa-minus"></i></button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
-              <i class="fa fa-times"></i></button>
+    <form action="../../index2.html" method="post">
+      <div class="form-group has-feedback">
+        <input type="email" class="form-control" placeholder="Email">
+        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+      </div>
+      <div class="form-group has-feedback">
+        <input type="password" class="form-control" placeholder="Password">
+        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+      </div>
+      <div class="row">
+        <div class="col-xs-8">
+          <div class="checkbox icheck">
           </div>
         </div>
-        <div class="box-body">
-          Start creating your amazing application!
+        <!-- /.col -->
+        <div class="col-xs-12">
+          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
         </div>
-        <!-- /.box-body -->
-        <div class="box-footer">
-          Footer
-        </div>
-        <!-- /.box-footer-->
+        <!-- /.col -->
       </div>
-      <!-- /.box -->
+    </form>
+    <!-- /.social-auth-links -->
 
-    </section>
-    <!-- /.content -->
+    <a href="#">I forgot my password</a><br>
+    <a href="register.html" class="text-center">Register a new membership</a>
+
   </div>
-  <!-- /.content-wrapper -->
-
-  <?php 
-    include 'layout/footer.php';
-  ?>
-
-  <!-- Control Sidebar -->
-
-
-  <!-- /.control-sidebar -->
-  <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
-
-
-<!-- ./wrapper -->
+  <!-- /.login-box-body -->
+</div>
+<!-- /.login-box -->
 
 <!-- jQuery 3 -->
-  <?php 
-    include 'layout/script.php';
-  ?>
-</script>
+<?php 
+  include 'layout/script.php';
+ ?>
 </body>
 </html>

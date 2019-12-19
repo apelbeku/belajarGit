@@ -64,7 +64,7 @@
                   <th>Action</th>
                 </tr>
                 <?php 
-                  include '../koneksi.php';
+                  include '../config/koneksi.php';
                     
                     $nomor    = 1;
                     $sql      = "SELECT * FROM users";
