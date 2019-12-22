@@ -1,5 +1,5 @@
 <?php 
-	include '../koneksi.php';
+	include '../config/koneksi.php';
 
 	$id 			= $_POST['id'];
 	$author			= $_POST['author'];
@@ -10,4 +10,4 @@
 	$sql			= "UPDATE post SET author='$author', title='$title', content='$content', status='$status' WHERE 			 id='$id'";
 
 	mysqli_query($konek, $sql);
-	header('location:berandapost.php');
+	header('location:index.php');

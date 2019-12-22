@@ -1,5 +1,5 @@
 <?php
-	include '../koneksi.php';
+	include '../config/koneksi.php';
 
 	$author		= $_POST['author'];
 	$title		= $_POST['title'];
@@ -9,4 +9,4 @@
 	$sql		= "INSERT INTO post (author, title, content, status) VALUES ('$author', '$title', '$content', '$status')";
 
 	mysqli_query($konek, $sql);
-	header('location:berandapost.php');
+	header('location:index.php');

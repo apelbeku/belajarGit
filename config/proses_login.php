@@ -15,7 +15,7 @@
 			$_SESSION['id']			= $row['id'];
 			$_SESSION['name']		= $row['name'];
 			$_SESSION['password']	= $row['pass'];
-			header('location:../home/index.php')
+			header('location:../home/index.php');
 		}else{
 			echo "Email atau password anda Salah :p";
 		}

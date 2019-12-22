@@ -46,7 +46,7 @@
     <section class="content-header">
       <h1>
         Belajar Git
-        <small>Bikin Project CMS</small>
+        <small>Streaming Drakor skuy</small>
       </h1>
       <ol class="breadcrumb">
         <li class="active"><i class="fa fa-home"></i>Beranda</li>
@@ -108,6 +108,6 @@
 </html>
 <?php
   }else{
-    echo "anda belum Login, Silahkan Login dahulu <a href='http://localhost/php/belajarGit/index.php'>DISINI !!!!</a>";
+    echo "anda belum Login, Silahkan Login dahulu <a href='http://localhost/main/php/belajarGit/index.php'>DISINI !!!!</a>";
   }
  ?>

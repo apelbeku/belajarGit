@@ -1,3 +1,10 @@
+<?php 
+  session_start();
+  if (!isset($_SESSION['email'])) {
+    header('location:../index.php');
+  }
+ ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -67,7 +74,7 @@
                   <td>Action</td>
                 </tr>
                 <?php 
-                  include '../koneksi.php';
+                  include '../config/koneksi.php';
 
                   $nomor      = 1;
                   $sql        = "SELECT * FROM post";

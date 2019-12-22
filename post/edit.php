@@ -59,7 +59,7 @@
             <div class="box-body">
                 <form role="form" method="POST" action="proses_edit.php">
                   <?php 
-                    include '../koneksi.php';
+                    include '../config/koneksi.php';
 
                     $id       = $_GET['id'];
                     $sql      = "SELECT * FROM post WHERE id='$id'";
@@ -101,7 +101,7 @@
               <!-- /.box-body -->
 
               <div class="box-footer">
-                <a href="berandapost.php" class="btn btn-sm btn-default"><i class="fa fa-arrow-left"></i>Kembali</a>
+                <a href="index.php" class="btn btn-sm btn-default"><i class="fa fa-arrow-left"></i>Kembali</a>
                 <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-send"></i>Submit</button>
               </div>
             </form>

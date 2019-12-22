@@ -89,7 +89,7 @@
              </div>
               <!-- /.box-body -->
               <div class="box-footer clearfix">
-                <a href="berandapost.php" class="btn btn-sm btn-default"><i class="fa fa-arrow-left"></i>Kembali</a>
+                <a href="index.php" class="btn btn-sm btn-default"><i class="fa fa-arrow-left"></i>Kembali</a>
                 <button type="submit" class="btn btn-primary btn-sm"><i class="fa fa-send"></i>Submit</button>
               </div>
             </form>
